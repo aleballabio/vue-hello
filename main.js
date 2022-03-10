@@ -7,9 +7,9 @@ const app = new Vue({
         image: "https://picsum.photos/200/300",
         altimg: "wow",
     },
-    methods: {
+    computed: {
         greeting: function () {
-            this.saluto = `${this.nome} ${this.greet}`;
+            return this.saluto = `${this.greet} ${this.nome}`;
         }
     }
 });
